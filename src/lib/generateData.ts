@@ -12,7 +12,7 @@ const locations = [
   [-33.4489, -70.6693], // Santiago
 ];
 
-const generateShipmentData = (startYear, endYear) => {
+const generateShipmentData = (startYear: number, endYear: number) => {
   const shipmentData = [];
   let id = 1;
 
