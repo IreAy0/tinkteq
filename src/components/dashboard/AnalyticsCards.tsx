@@ -33,8 +33,6 @@ export default function AnalyticsCard({ data }: AnalyticsCardProps) {
   const totalFailed = filteredData.filter(item => item.status === 'failed').length;
   const amount = filteredData.reduce((sum, item) => sum + item.value, 0);
 
-  console.log('data.length', data.length)
-
   return (
     <div className="p-4 bg-white rounded-lg shadow-md">
       <div className="flex justify-between items-center mb-4">
