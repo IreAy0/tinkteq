@@ -1,6 +1,5 @@
 import { CalendarIcon, CheckCircleIcon, TruckIcon, XCircleIcon } from 'lucide-react';
 import { useState } from 'react';
-import 'react-datepicker/dist/react-datepicker.css';
 import { Input } from '../ui/input';
 
 interface DataItem {
