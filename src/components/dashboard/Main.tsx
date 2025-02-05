@@ -107,7 +107,7 @@ const Main: React.FC = () => {
     animations: {
       tension: {
         duration: 1000,
-        easing: 'linear',
+        easing: 'easeInOutQuad' as const,
         from: 1,
         to: 0,
         loop: true
@@ -186,7 +186,7 @@ const Main: React.FC = () => {
           <h2 className="text-xl font-semibold mb-4">Shipment Locations Overview</h2>
           </div>
           <div className="h-96">
-            <Map locations={filteredData.map((data) => data.location)} />
+            <Map locations={filteredData.map((data) => [data.location[0], data.location[1]])} />
           </div>
         </CardContent>
       </Card>
